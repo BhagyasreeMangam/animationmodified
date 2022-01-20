@@ -1,0 +1,247 @@
+.menu:hover{
+    transition: 5s;
+    transform: rotatey(180deg);
+}
+.laptop-img{
+    position: relative;
+    animation: lappy 2s infinite ease-in;
+    animation-direction: normal;
+}
+
+@keyframes lappy {
+    0% {left: 0px; bottom: 0px;}
+    40% {left: 0px; bottom: 25px;}
+    60% {left: 0px; bottom: 20px;}
+    80% {left: 0px; bottom: 15px;}
+    100% {left: 0px; bottom: 0px;}
+
+}
+.flip-image{
+    height: 92%;
+}
+
+
+.linkbutton1:hover{
+    transition: 0.6s ease-out ; 
+    background-color:chocolate ;
+    color: black;
+    border: transparent;
+}
+.linkbutton2:hover{
+    transition: 0.5s linear ; 
+    background-color:#2AFAC2 ;
+    color: black;
+    border: transparent;
+}
+.linkbutton3:hover{
+    transition: 0.7s linear ; 
+    background-color:#2AFAC2 ;
+    color: black;
+    border: transparent;
+}
+.btn11:hover{
+    transition: 1s linear;
+    background:#170f53 ;
+    color:#42D4EA ;
+    border: transparent;
+}
+.action:hover{
+    transition: 1s linear;
+    background-color: #FA3B6E;
+    border: transparent;
+}
+.ptnr:hover{
+    transition: 1.3s ease-in;
+    border-color: #6e0622;
+    color:pink ;
+    }
+
+.link-ele:hover{
+    transition: 0.5s linear;
+    background-color:#FA3B6E;
+    color: white;
+}
+
+.signup-btn{
+    position:relative;
+    background-image: linear-gradient(to right,rgb(175, 67, 255,0.8),rgb(250, 110, 59,0.8)); 
+    z-index:1;  
+    
+}
+.signup-btn::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to left,rgb(175, 67, 255,0.8),rgb(250, 110, 59,0.8));
+    z-index: -1;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+    border-radius:2rem;
+}
+.signup-btn:hover::before{
+    opacity:1;     
+}
+
+
+.login-btn{
+    position:relative;
+    background-image: linear-gradient(to right,#B79039,#FF8545);
+    z-index:1;  
+    
+}
+.login-btn::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to left,#B79039,#FF8545);
+    z-index: -1;
+    transition: opacity 0.3s linear;
+    opacity: 0;
+    border-radius:2rem;
+}
+.login-btn:hover::before{
+    opacity:1;     
+}
+
+.icon11{
+    position: relative;
+    animation: icon 2s 20 ease-in;
+    animation-direction: normal;
+}
+
+@keyframes icon {
+    0% {left: 0px; bottom: 0px;}
+   /* 60% {left: 0px; bottom: 50px;}*/
+    80% {left: 0px; bottom: 60px;}
+    100% {left: 0px; bottom: 0px;}
+
+}
+.icon3,.icon5{
+    position: relative;
+    animation: icon 3s 20 ease-out;
+    animation-direction: normal;
+}
+
+@keyframes icon {
+    0% {left: 0px; bottom: 0px;}
+   /* 60% {left: 0px; bottom: 50px;}*/
+    80% {left: 0px; bottom: 60px;}
+    100% {left: 0px; bottom: 0px;}
+
+}
+
+.flip-card {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1s linear;
+    width:400px;
+    height:300px;
+    margin:0px 43px 117px 0px;
+}
+.flip-card1{
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1s linear;
+    width:400px;
+    height:300px;
+    margin:0px 0px 117px 43px;
+}
+.flip-card:hover {
+    transform:rotateY(180deg);
+}
+.flip-card1:hover {
+    transform:rotateY(180deg);
+}
+/*.flip-card:hover .back-side{
+    top:-2%;
+    right:-8%;
+    position:relative;
+}*/
+
+.test_1{
+    position:absolute;
+    box-shadow:0 3px 10px rgba(0 0 0/0.2);
+    padding:0px 61px 70px 40px;
+    /*max-width:400px;*/
+    font-family:"Poppins";
+    font-weight:400;
+    backface-visibility: hidden;
+    height:300px;
+    width:300px;
+}
+.back-side{
+    position:absolute;
+    box-shadow:0 3px 10px rgb(0 0 0 / 0.2);
+    /*max-width:600px;*/
+    backface-visibility: hidden;
+    transform:rotateY(180deg);
+    padding:0px 61px 70px 40px;
+    height:300px;
+    width:300px;
+}
+.backimage{
+    max-width:300px;
+}
+.card_1{
+    margin:0px 43px 117px 0px;
+}
+.card_2{
+    margin:0px 0px 117px 43px;
+}
+
+.mid-container{
+    padding:135px 156px 0px 165px;
+}
+/*.heading1 {
+    padding:0px 0px 96px 0px;
+    text-align:center;
+    display:flex;
+    justify-content: center;;
+    color:orange;
+    font-family: "Poppins";
+    font-weight:700;
+    font-size:60px;
+}*/
+.test{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+}
+/*.test-heading{
+    font-family: "Poppins";
+    color:#504450;
+    font-weight: 700;
+    font-size:36px;
+    padding:20px 0px 0px 0px;
+    margin-bottom:15px;
+}
+.loreumpara{
+    font-family: "Poppins";
+    font-family: 400;
+    font-size:20px;
+}
+.action-link{
+    border-radius:25px;
+    padding:13px 33px 11px 33px;
+    border-width:0px;
+    color:white;
+    font-family:"Poppins";
+    font-size:18px;
+    font-weight:700;
+    margin:25px 0px 0px 0px;
+    cursor:pointer;
+}
+.lorembtn{
+    background-image:linear-gradient(to right,#4A90FF,#FA3BB1);
+}
+.lorembtn1{
+    background-image:linear-gradient(to right, #B79039,#FF8545);
+}*/
+
+
